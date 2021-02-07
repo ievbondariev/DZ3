@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Task5_1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double a1 = scanner.nextDouble();
+        double b1 = scanner.nextDouble();
+        double c1 = scanner.nextDouble();
+        double a2 = scanner.nextDouble();
+        double b2 = scanner.nextDouble();
+        double c2 = scanner.nextDouble();
+        double d1 = a1 * a1 + b1 * b1 + c1 * c1;
+        double d2 = a2 * a2 + b2 * b2 + c2 * c2;
+
+        if (a1 * b1 * c1 == a2 * b2 * c2 && d1 == d2) {
+            System.out.println("Boxes are equal");
+
+        } else if (a1 * b1 * c1 > a2 * b2 * c2 && d1 > d2) {
+             System.out.println("The first box is larger than the second one");
+
+            } else if (a1 * b1 * c1 < a2 * b2 * c2 && d1 < d2) {
+            System.out.println("The first box is smaller than the second one");
+
+                } else {
+            System.out.println("Boxes are incomparable");
+
+        }
+
+//            System.out.printf("%.2f, %.2f", d1, d2);
+
+    }
+}
